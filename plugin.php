@@ -14,4 +14,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 require_once dirname( __FILE__ ) . '/library/class-acf-to-rest-api-recursive.php';
 
-add_action( 'after_setup_theme', array( 'ACF_To_REST_API_Recursive', 'init' ) );
+add_action( 'rest_api_init', array( 'ACF_To_REST_API_Recursive', 'init' ) );
